@@ -43,6 +43,7 @@ public class Ex01출력 {
 		System.out.println(s2);
 
 		System.out.println(s1 + s2 + 1); //문자열 더하기 연산 +
+		// 문자열 + 숫자 => 숫자가 문자로 변환
 		
 		
 		
