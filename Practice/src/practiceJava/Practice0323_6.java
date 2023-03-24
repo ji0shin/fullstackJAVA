@@ -64,5 +64,11 @@ public class Practice0323_6 {
 		
 		System.out.println((sum > 100) ? 100 : 0);
 		
+		//10. 
+		System.out.println((n > 5) ? n : 5);
+		
+		//11. 
+//		System.out.println(""를 출력하려면 \ 다음에 "를 붙여 \"과 같이 하면 됩니다.");
+		
 	}
 }
