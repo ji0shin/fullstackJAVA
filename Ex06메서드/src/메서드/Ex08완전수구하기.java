@@ -29,6 +29,9 @@ public class Ex08완전수구하기 {
 		boolean result2 = isPerfectNumber(num3);
 		System.out.println(result2);
 		
+		int startValue = 2;
+		int endValue = 1000;
+		getPerfectNumber(startValue, endValue);
 
 	}
 	
@@ -67,8 +70,9 @@ public class Ex08완전수구하기 {
 		return sum + num;
 	}
 
-	//4. isPerfectNumber()
+	//4. isPerfectNumber() : 매개변수 int 1개, 반환타입 boolean
 	public static boolean isPerfectNumber(int num) {
+		//자기자신을 제외한 약수의 햡 == 자기 자신
 		if(getSumOfDivisors(num) - num == num) {
 			return true;
 		}else {
@@ -76,4 +80,14 @@ public class Ex08완전수구하기 {
 		}
 	}
 	
+	//5. getPerfectNumber() : 매개변수 int 2개, 출력하는 기능(void)
+	//   startValue ~ endValue 까지의 숫자 중 완전수 출력
+	public static void getPerfectNumber(int startValue, int endValue) {
+		System.out.print(startValue + "~" + endValue + "까지의 완전수 : ");
+		for(int i = startValue ; i <= endValue ; i++) {
+			if(isPerfectNumber(i)) {
+				System.out.print(i + " ");
+			}
+		}
+	}
 }
